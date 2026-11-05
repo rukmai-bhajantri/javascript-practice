@@ -91,10 +91,29 @@
 
 // Check whether a student passed or failed
 
-let marks = 35;
-if(marks>=35){
-    console.log("Pass",marks);
+// let marks = 35;
+// if(marks>=35){
+//     console.log("Pass",marks);
+// }
+// else{
+//     console.log("Fail",marks);
+// }
+
+// Find the grade of a student based on percentage.
+
+let percentage = 85;
+if(percentage>=90){
+    console.log("Grade A+",percentage);
+}
+else if(percentage>=80){
+    console.log("Grade A",percentage);
+}
+else if(percentage>=70){
+    console.log("Grade B",percentage);
+}
+else if(percentage>=60){
+    console.log("Grade C",percentage);
 }
 else{
-    console.log("Fail",marks);
+    console.log("Fail",percentage);
 }
