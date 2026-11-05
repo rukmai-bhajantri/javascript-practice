@@ -69,12 +69,22 @@
 // }
 
 // Find the Largest of Two Numbers
-let a = 50;
-let b = 30;
+// let a = 50;
+// let b = 30;
 
-if(a>b){
-    console.log("It is beggest number",a);
+// if(a>b){
+//     console.log("It is beggest number",a);
+// }
+// else{
+//     console.log("It is not beggest number",b);
+// }
+
+// Check whether a person is eligible to vote
+
+let age = 20;
+if(age>=18){
+    console.log("Eligible to vote",age);
 }
 else{
-    console.log("It is not beggest number",a);
+    console.log("Not Eligible to vote")
 }
