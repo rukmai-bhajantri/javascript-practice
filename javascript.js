@@ -42,13 +42,28 @@
 // }
 
 // Check whether a number is Positive, Negative or Zero
-let num=-10;
-if(num>0){
-    console.log("It is Positive Number",num);
+// let num=-10;
+// if(num>0){
+//     console.log("It is Positive Number",num);
+// }
+// else if (num < 0) {
+//     console.log("It is Negative Number", num);
+// }
+// else{
+//     console.log("It is Zero", num);
+// }
+
+// Find the Smallest of Three Numbers.
+let a = 20;
+let b = 10;
+let c = 30;
+
+if(a<b && a<c){
+    console.log("Smallest number is",a);
 }
-else if (num < 0) {
-    console.log("It is Negative Number", num);
+else if(b<a && b<c){
+    console.log("Smallest number is",b);
 }
 else{
-    console.log("It is Zero", num);
+    console.log("Smallest number is",c);
 }
