@@ -54,16 +54,27 @@
 // }
 
 // Find the Smallest of Three Numbers.
-let a = 20;
-let b = 10;
-let c = 30;
+// let a = 20;
+// let b = 10;
+// let c = 30;
 
-if(a<b && a<c){
-    console.log("Smallest number is",a);
-}
-else if(b<a && b<c){
-    console.log("Smallest number is",b);
+// if(a<b && a<c){
+//     console.log("Smallest number is",a);
+// }
+// else if(b<a && b<c){
+//     console.log("Smallest number is",b);
+// }
+// else{
+//     console.log("Smallest number is",c);
+// }
+
+// Find the Largest of Two Numbers
+let a = 50;
+let b = 30;
+
+if(a>b){
+    console.log("It is beggest number",a);
 }
 else{
-    console.log("Smallest number is",c);
+    console.log("It is not beggest number",a);
 }
