@@ -17,3 +17,11 @@
 // let a=4;
 // let b=6;
 // console.log(a/b);
+
+let a=20;
+if(a%2==0){
+    console.log("It is even number",a);
+}
+else{
+    console.log("It is not even number",a)
+}
