@@ -28,15 +28,27 @@
 
 // Largest of Three Numbers
 
-a=20;
-b=30;
-c=40;
-if(a>b && a>c){
-    console.log("Biggest number is",a);
+// a=20;
+// b=30;
+// c=40;
+// if(a>b && a>c){
+//     console.log("Biggest number is",a);
+// }
+// else if(b>a && b>c){
+//     console.log("Biggest number is",b);
+// }
+// else{
+//     console.log("Biggest number is",c);
+// }
+
+// Check whether a number is Positive, Negative or Zero
+let num=-10;
+if(num>0){
+    console.log("It is Positive Number",num);
 }
-else if(b>a && b>c){
-    console.log("Biggest number is",b);
+else if (num < 0) {
+    console.log("It is Negative Number", num);
 }
 else{
-    console.log("Biggest number is",c);
+    console.log("It is Zero", num);
 }
