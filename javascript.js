@@ -18,10 +18,25 @@
 // let b=6;
 // console.log(a/b);
 
-let a=20;
-if(a%2==0){
-    console.log("It is even number",a);
+// let a=20;
+// if(a%2==0){
+//     console.log("It is even number",a);
+// }
+// else{
+//     console.log("It is not even number",a)
+// }
+
+// Largest of Three Numbers
+
+a=20;
+b=30;
+c=40;
+if(a>b && a>c){
+    console.log("Biggest number is",a);
+}
+else if(b>a && b>c){
+    console.log("Biggest number is",b);
 }
 else{
-    console.log("It is not even number",a)
+    console.log("Biggest number is",c);
 }
