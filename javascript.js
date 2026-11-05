@@ -81,10 +81,20 @@
 
 // Check whether a person is eligible to vote
 
-let age = 20;
-if(age>=18){
-    console.log("Eligible to vote",age);
+// let age = 20;
+// if(age>=18){
+//     console.log("Eligible to vote",age);
+// }
+// else{
+//     console.log("Not Eligible to vote")
+// }
+
+// Check whether a student passed or failed
+
+let marks = 35;
+if(marks>=35){
+    console.log("Pass",marks);
 }
 else{
-    console.log("Not Eligible to vote")
+    console.log("Fail",marks);
 }
