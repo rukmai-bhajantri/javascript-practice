@@ -133,10 +133,18 @@
 
 // Check Divisibility by 5 and 11
 
-let num = 55;
-if(num%5==0 && num%11==0){
-    console.log("is divisible by 5 and 11");
+// let num = 55;
+// if(num%5==0 && num%11==0){
+//     console.log("is divisible by 5 and 11");
+// }
+// else{
+//     console.log("It is not is divisible by 5 and 11");
+// }
+
+let ch = "b";
+if(ch=='a' || ch=='e '|| ch=='i' || ch=='o '|| ch=='u'){
+    console.log(ch,"is a Vowel");
 }
 else{
-    console.log("It is not is divisible by 5 and 11");
+    console.log(ch, "is a Consonant");
 }
