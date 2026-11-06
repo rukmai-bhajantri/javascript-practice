@@ -123,10 +123,20 @@
 
 
 // Write a JavaScript program to check whether a given year is a Leap Year or Not.
-let year = 2024;
-if(year % 400==0 ||(year%4==0 && year%100!=0)){
-    console.log("It is leap year",year);
+// let year = 2024;
+// if(year % 400==0 ||(year%4==0 && year%100!=0)){
+//     console.log("It is leap year",year);
+// }
+// else{
+//     console.log("it is not leap year",year);
+// }
+
+// Check Divisibility by 5 and 11
+
+let num = 55;
+if(num%5==0 && num%11==0){
+    console.log("is divisible by 5 and 11");
 }
 else{
-    console.log("it is not leap year",year);
+    console.log("It is not is divisible by 5 and 11");
 }
