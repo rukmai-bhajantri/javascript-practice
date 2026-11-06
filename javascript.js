@@ -101,19 +101,32 @@
 
 // Find the grade of a student based on percentage.
 
-let percentage = 85;
-if(percentage>=90){
-    console.log("Grade A+",percentage);
-}
-else if(percentage>=80){
-    console.log("Grade A",percentage);
-}
-else if(percentage>=70){
-    console.log("Grade B",percentage);
-}
-else if(percentage>=60){
-    console.log("Grade C",percentage);
+// let percentage = 85;
+// if(percentage>=90){
+//     console.log("Grade A+",percentage);
+// }
+// else if(percentage>=80){
+//     console.log("Grade A",percentage);
+// }
+// else if(percentage>=70){
+//     console.log("Grade B",percentage);
+// }
+// else if(percentage>=60){
+//     console.log("Grade C",percentage);
+// }
+// else{
+//     console.log("Fail",percentage);
+// }
+
+
+
+
+
+// Write a JavaScript program to check whether a given year is a Leap Year or Not.
+let year = 2024;
+if(year % 400==0 ||(year%4==0 && year%100!=0)){
+    console.log("It is leap year",year);
 }
 else{
-    console.log("Fail",percentage);
+    console.log("it is not leap year",year);
 }
