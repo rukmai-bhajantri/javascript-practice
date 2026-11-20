@@ -141,10 +141,24 @@
 //     console.log("It is not is divisible by 5 and 11");
 // }
 
-let ch = "b";
-if(ch=='a' || ch=='e '|| ch=='i' || ch=='o '|| ch=='u'){
-    console.log(ch,"is a Vowel");
+// let ch = "b";
+// if(ch=='a' || ch=='e'|| ch=='i' || ch=='o'|| ch=='u'){
+//     console.log(ch,"is a Vowel");
+// }
+// else{
+//     console.log(ch, "is a Consonant");
+// }
+
+// Check Even or Odd using Ternary Operator
+
+// let num = 7;
+// console.log(num%2==0?"even":"odd");
+
+let num = 21;
+if(num%3==0 && num%7==0){
+    console.log("num is  divisible by 3 and 7");
 }
 else{
-    console.log(ch, "is a Consonant");
+    console.log("num is not  divisible by 3 and 7")
 }
+
