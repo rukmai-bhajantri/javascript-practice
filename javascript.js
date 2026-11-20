@@ -154,11 +154,38 @@
 // let num = 7;
 // console.log(num%2==0?"even":"odd");
 
-let num = 21;
-if(num%3==0 && num%7==0){
-    console.log("num is  divisible by 3 and 7");
-}
-else{
-    console.log("num is not  divisible by 3 and 7")
-}
+// let num = 21;
+// if(num%3==0 && num%7==0){
+//     console.log("num is  divisible by 3 and 7");
+// }
+// else{
+//     console.log("num is not  divisible by 3 and 7")
+// }
+
+let form=document.querySelector("form")
+
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    let password=document.querySelector('[name="password"]').value;
+    let confirmPassword=document.querySelector('[name="confirmPassword"]').value;
+     
+    if(password.length<6){
+    alert("Password must be at least 6 characters");
+    }
+    else if(password!==confirmPassword){
+    alert("Password does not match");
+    }
+    else{
+    console.log("Registration Successful!");
+    }
+    // else{
+
+    // }
+    // if(password===confirmPassword){
+    //    console.log("Password match");
+    // }
+    // else{
+    //      alert("Password does not match!");
+    // }
+})
 
