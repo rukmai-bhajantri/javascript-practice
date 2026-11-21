@@ -168,24 +168,18 @@ form.addEventListener("submit",function(event){
     event.preventDefault();
     let password=document.querySelector('[name="password"]').value;
     let confirmPassword=document.querySelector('[name="confirmPassword"]').value;
-     
+    let email=document.querySelector('[name="email"]').value;
     if(password.length<6){
     alert("Password must be at least 6 characters");
     }
     else if(password!==confirmPassword){
     alert("Password does not match");
     }
-    else{
-    console.log("Registration Successful!");
+    else if(!email.includes("@")){
+    alert("Invalid Email include @");
     }
-    // else{
-
-    // }
-    // if(password===confirmPassword){
-    //    console.log("Password match");
-    // }
-    // else{
-    //      alert("Password does not match!");
-    // }
+    else{
+    alert("Registration Successful!");
+    }
 })
 
