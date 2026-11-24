@@ -201,22 +201,22 @@
 // })
 
 
-let password = document.querySelector('[name="password"]');
-let button = document.querySelector("#toggle");
+// let password = document.querySelector('[name="password"]');
+// let button = document.querySelector("#toggle");
 
-button.addEventListener("click", function (event) {
-    if (password.type === "password") {
-        password.type = "text"
-        button.innerText = "👁️";
-    }
-    else {
-        password.type = "password";
-        button.innerText = "🙈";
-    }
-})
+// button.addEventListener("click", function (event) {
+//     if (password.type === "password") {
+//         password.type = "text"
+//         button.innerText = "👁️";
+//     }
+//     else {
+//         password.type = "password";
+//         button.innerText = "🙈";
+//     }
+// })
 
-// let email=document.querySelector("#email");
-// let show=document.querySelector("#show");
-// email.addEventListener("input",function(event){
-// show.innerText="your email is: "+email.value;
-// }) 
+let email=document.querySelector("#email");
+let show=document.querySelector("#show");
+email.addEventListener("input",function(event){
+show.innerText="your email is: "+email.value;
+}) 
