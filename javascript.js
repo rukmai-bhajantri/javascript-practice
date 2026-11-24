@@ -183,16 +183,40 @@
 //     }
 // })
 
-let h2=document.querySelector("body");
-let btn=document.querySelector("button");
+// let h2=document.querySelector("body");
+// let btn=document.querySelector("button");
 
-btn.addEventListener("click",function(){
-    if (h2.style.backgroundColor === "black") {
-        h2.style.backgroundColor = "white";
+// btn.addEventListener("click",function(){
+//     if (h2.style.backgroundColor === "black") {
+//         h2.style.backgroundColor = "white";
+//         h2.style.color="black"
+//     }
+
+//     else {
+//         h2.style.backgroundColor = "black";
+//         h2.style.color="white"
+//     }
+//     // h2.style.backgroundColor="black"
+//     // h2.innerHTML='<span style="color:green;">Welcome to</span><span style="color:blue;">javascript</span>';
+// })
+
+
+let password = document.querySelector('[name="password"]');
+let button = document.querySelector("#toggle");
+
+button.addEventListener("click", function (event) {
+    if (password.type === "password") {
+        password.type = "text"
+        button.innerText = "👁️";
     }
     else {
-        h2.style.backgroundColor = "black";
+        password.type = "password";
+        button.innerText = "🙈";
     }
-    // h2.style.backgroundColor="black"
-    // h2.innerHTML='<span style="color:green;">Welcome to</span><span style="color:blue;">javascript</span>';
 })
+
+// let email=document.querySelector("#email");
+// let show=document.querySelector("#show");
+// email.addEventListener("input",function(event){
+// show.innerText="your email is: "+email.value;
+// }) 
