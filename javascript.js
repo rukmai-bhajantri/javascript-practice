@@ -280,36 +280,56 @@
 // body.style.background="green";
 // })
 
-let body=document.querySelector("body");
-let btn=document.querySelector("#color");
+// let body=document.querySelector("body");
+// let btn=document.querySelector("#color");
+// // let hide=document.querySelector("#hide");
+// // let show=document.querySelector("#show");
+// // let heading=document.querySelector("#heading");
+
+// btn.addEventListener("click",function(event){
+//     if(body.style.background==="black"){
+//         body.style.background="white";
+//         body.style.color="black";
+
+//     }
+//     else{
+//         body.style.background="black";
+//         body.style.color="white";
+
+//     }
+// })
+
+
 // let hide=document.querySelector("#hide");
 // let show=document.querySelector("#show");
 // let heading=document.querySelector("#heading");
 
-btn.addEventListener("click",function(event){
-    if(body.style.background==="black"){
-        body.style.background="white";
-        body.style.color="black";
-        
-    }
-    else{
-        body.style.background="black";
-        body.style.color="white";
-       
-    }
+// hide.addEventListener("click",function(event){
+//         //  heading.style.display="none";
+//         heading.style.visibility = "hidden";
+
+// })
+// show.addEventListener("click",function(event){
+//         //  heading.style.display="block";
+//         heading.style.visibility = "visible";
+// })
+
+let heading = document.querySelector("#heading");
+let change = document.querySelector("#change");
+let red = document.querySelector("#red");
+let blue = document.querySelector("#blue");
+
+change.addEventListener("click", function (event) {
+    heading.innerText = "I am a Full Stack Developer 💎";
+
+})
+
+red.addEventListener("click", function (event) {
+    heading.style.color = "red";
 })
 
 
-let hide=document.querySelector("#hide");
-let show=document.querySelector("#show");
-let heading=document.querySelector("#heading");
 
-hide.addEventListener("click",function(event){
-        //  heading.style.display="none";
-        heading.style.visibility = "hidden";
-        
-})
-show.addEventListener("click",function(event){
-        //  heading.style.display="block";
-        heading.style.visibility = "visible";
+blue.addEventListener("click", function (event) {
+    heading.style.color = "blue";
 })
