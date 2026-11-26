@@ -242,23 +242,40 @@
 // }
 // })
 
-let count = document.querySelector("#count");
-let increase = document.querySelector("#increase");
-let number = 0;
-increase.addEventListener("click", function (event) {
-    number = number + 1;
-    count.innerText = number;
+// let count = document.querySelector("#count");
+// let increase = document.querySelector("#increase");
+// let number = 0;
+// increase.addEventListener("click", function (event) {
+//     number = number + 1;
+//     count.innerText = number;
+// })
+
+
+// let decrease = document.querySelector("#decrease");
+// decrease.addEventListener("click", function (event) {
+//     number = number - 1;
+//     count.innerText = number;
+// })
+
+// let reset=document.querySelector("#reset");
+// reset.addEventListener("click",function(event){
+// number=0;
+// count.innerText=number;
+// })/
+
+let body=document.querySelector("body");
+let red = document.querySelector("#red");
+let blue = document.querySelector("#blue");
+let green = document.querySelector("#green");
+
+red.addEventListener("click",function(event){
+body.style.background="red";
 })
 
-
-let decrease = document.querySelector("#decrease");
-decrease.addEventListener("click", function (event) {
-    number = number - 1;
-    count.innerText = number;
+blue.addEventListener("click",function(event){
+body.style.background="blue";
 })
 
-let reset=document.querySelector("#reset");
-reset.addEventListener("click",function(event){
-number=0;
-count.innerText=number;
+green.addEventListener("click",function(event){
+body.style.background="green";
 })
