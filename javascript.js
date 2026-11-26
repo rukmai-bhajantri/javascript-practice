@@ -215,29 +215,50 @@
 //     }
 // })
 
-let email = document.querySelector("#email");
-let show = document.querySelector("#show");
-email.addEventListener("input", function (event) {
-    show.innerText = "your email is: " + email.value;
+// let email = document.querySelector("#email");
+// let show = document.querySelector("#show");
+// email.addEventListener("input", function (event) {
+//     show.innerText = "your email is: " + email.value;
+// })
+
+
+// let inpname=document.querySelector("#name");
+// let count=document.querySelector("#count");
+
+// inpname.addEventListener("input",function(event){
+// count.innerText="Characters:"+inpname.value.length;
+// })
+
+
+// let password=document.querySelector("#password");
+// let result=document.querySelector("#result");
+
+// password.addEventListener("input",function(event){
+// if(password.value.length>=6){
+//     result.innerText = "Strong Password:";
+// }
+// else{
+//      result.innerText = "Weak Password:";
+// }
+// })
+
+let count = document.querySelector("#count");
+let increase = document.querySelector("#increase");
+let number = 0;
+increase.addEventListener("click", function (event) {
+    number = number + 1;
+    count.innerText = number;
 })
 
 
-let inpname=document.querySelector("#name");
-let count=document.querySelector("#count");
-
-inpname.addEventListener("input",function(event){
-count.innerText="Characters:"+inpname.value.length;
+let decrease = document.querySelector("#decrease");
+decrease.addEventListener("click", function (event) {
+    number = number - 1;
+    count.innerText = number;
 })
 
-
-let password=document.querySelector("#password");
-let result=document.querySelector("#result");
-
-password.addEventListener("input",function(event){
-if(password.value.length>=6){
-    result.innerText = "Strong Password:";
-}
-else{
-     result.innerText = "Weak Password:";
-}
+let reset=document.querySelector("#reset");
+reset.addEventListener("click",function(event){
+number=0;
+count.innerText=number;
 })
