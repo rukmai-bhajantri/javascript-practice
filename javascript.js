@@ -183,18 +183,18 @@
 //     }
 // })
 
-// let h2=document.querySelector("body");
-// let btn=document.querySelector("button");
+// let h2 = document.querySelector("body");
+// let btn = document.querySelector("button");
 
-// btn.addEventListener("click",function(){
+// btn.addEventListener("click", function () {
 //     if (h2.style.backgroundColor === "black") {
 //         h2.style.backgroundColor = "white";
-//         h2.style.color="black"
+//         h2.style.color = "black"
 //     }
 
 //     else {
 //         h2.style.backgroundColor = "black";
-//         h2.style.color="white"
+//         h2.style.color = "white"
 //     }
 //     // h2.style.backgroundColor="black"
 //     // h2.innerHTML='<span style="color:green;">Welcome to</span><span style="color:blue;">javascript</span>';
@@ -215,8 +215,29 @@
 //     }
 // })
 
-let email=document.querySelector("#email");
-let show=document.querySelector("#show");
-email.addEventListener("input",function(event){
-show.innerText="your email is: "+email.value;
-}) 
+let email = document.querySelector("#email");
+let show = document.querySelector("#show");
+email.addEventListener("input", function (event) {
+    show.innerText = "your email is: " + email.value;
+})
+
+
+let inpname=document.querySelector("#name");
+let count=document.querySelector("#count");
+
+inpname.addEventListener("input",function(event){
+count.innerText="Characters:"+inpname.value.length;
+})
+
+
+let password=document.querySelector("#password");
+let result=document.querySelector("#result");
+
+password.addEventListener("input",function(event){
+if(password.value.length>=6){
+    result.innerText = "Strong Password:";
+}
+else{
+     result.innerText = "Weak Password:";
+}
+})
