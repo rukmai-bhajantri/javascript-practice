@@ -263,19 +263,53 @@
 // count.innerText=number;
 // })/
 
+// let body=document.querySelector("body");
+// let red = document.querySelector("#red");
+// let blue = document.querySelector("#blue");
+// let green = document.querySelector("#green");
+
+// red.addEventListener("click",function(event){
+// body.style.background="red";
+// })
+
+// blue.addEventListener("click",function(event){
+// body.style.background="blue";
+// })
+
+// green.addEventListener("click",function(event){
+// body.style.background="green";
+// })
+
 let body=document.querySelector("body");
-let red = document.querySelector("#red");
-let blue = document.querySelector("#blue");
-let green = document.querySelector("#green");
+let btn=document.querySelector("#color");
+// let hide=document.querySelector("#hide");
+// let show=document.querySelector("#show");
+// let heading=document.querySelector("#heading");
 
-red.addEventListener("click",function(event){
-body.style.background="red";
+btn.addEventListener("click",function(event){
+    if(body.style.background==="black"){
+        body.style.background="white";
+        body.style.color="black";
+        
+    }
+    else{
+        body.style.background="black";
+        body.style.color="white";
+       
+    }
 })
 
-blue.addEventListener("click",function(event){
-body.style.background="blue";
-})
 
-green.addEventListener("click",function(event){
-body.style.background="green";
+let hide=document.querySelector("#hide");
+let show=document.querySelector("#show");
+let heading=document.querySelector("#heading");
+
+hide.addEventListener("click",function(event){
+        //  heading.style.display="none";
+        heading.style.visibility = "hidden";
+        
+})
+show.addEventListener("click",function(event){
+        //  heading.style.display="block";
+        heading.style.visibility = "visible";
 })
